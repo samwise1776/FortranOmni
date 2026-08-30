@@ -15,7 +15,7 @@ imports.searchPath.unshift(APPS_DIR);
 
 const Common = imports.forutils_common;
 
-const APP_ID = "com.github.samwise1776.forutils";
+const APP_ID = "com.github.samwise1776.fortranomni";
 const APP_NAME = "FortranOmni";
 
 const state = {
@@ -110,7 +110,7 @@ function createWindow(app) {
 
     const topbar = new Gtk.Box({ orientation: Gtk.Orientation.HORIZONTAL, spacing: 10 });
     topbar.add_css_class("topbar");
-    const topTitle = new Gtk.Label({ label: "ForUtils Ultimate", xalign: 0, hexpand: true });
+    const topTitle = new Gtk.Label({ label: "FortranOmni", xalign: 0, hexpand: true });
     topTitle.add_css_class("brand");
     const countLabel = new Gtk.Label({ label: "", xalign: 1 });
     countLabel.add_css_class("tool-count");
@@ -175,7 +175,7 @@ function createWindow(app) {
 
             state.appRecords.push({ id, entry, instance, button });
         } catch (e) {
-            printerr(`[ForUtils] failed ${entry.id}: ${e.stack || e}`);
+            printerr(`[FortranOmni] failed ${entry.id}: ${e.stack || e}`);
         }
     }
 
