@@ -16,7 +16,7 @@ imports.searchPath.unshift(APPS_DIR);
 const Common = imports.forutils_common;
 
 const APP_ID = "com.github.samwise1776.forutils";
-const APP_NAME = "ForUtils Ultimate";
+const APP_NAME = "FortranOmni";
 
 const state = {
     settings: Common.loadSettings(),
@@ -128,7 +128,7 @@ function createWindow(app) {
     sideWrap.set_margin_start(10); sideWrap.set_margin_end(10);
 
     const brand = new Gtk.Label({ xalign: 0 });
-    brand.set_markup('<span size="21000" weight="bold"><span foreground="#00e8c0">For</span>Utils</span>');
+    brand.set_markup('<span size="21000" weight="bold"><span foreground="#00e8c0">Fortran</span>Omni</span>');
     sideWrap.append(brand);
     state.sidebarUserLabel = new Gtk.Label({ label: `User: ${state.settings.userName || GLib.get_user_name() || "User"}`, xalign: 0 });
     state.sidebarUserLabel.add_css_class("muted");
