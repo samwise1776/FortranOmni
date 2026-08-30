@@ -1,0 +1,21 @@
+app-id: com.github.samwise1776.forutils
+runtime: org.gnome.Platform
+runtime-version: '50'
+sdk: org.gnome.Sdk
+command: forutils
+finish-args:
+  - --share=network
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+  - --filesystem=home
+modules:
+  - name: forutils
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/share/forutils
+      - cp -a . /app/share/forutils/
+      - install -Dm755 run.sh /app/bin/forutils
+    sources:
+      - type: dir
+        path: .

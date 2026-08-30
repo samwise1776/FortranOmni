@@ -1,0 +1,6 @@
+.flatpak-builder/
+flatpak-build/
+flatpak-repo/
+ForUtils/.flatpak-builder/
+ForUtils/flatpak-build/
+ForUtils/flatpak-repo/

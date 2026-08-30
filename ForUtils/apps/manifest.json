@@ -1,0 +1,2535 @@
+{
+  "apps": [
+    {
+      "id": "system",
+      "module": "system_stats",
+      "name": "System Stats",
+      "icon": "🖥️",
+      "category": "System",
+      "description": "CPU, RAM, disk, OS, and session information.",
+      "enabled": true
+    },
+    {
+      "id": "network",
+      "module": "network_tools",
+      "name": "Network Tools",
+      "icon": "🌐",
+      "category": "System",
+      "description": "Ping, DNS, routes, interfaces, and connections.",
+      "enabled": true
+    },
+    {
+      "id": "docs",
+      "module": "docs_maker",
+      "name": "Docs Maker",
+      "icon": "📝",
+      "category": "Developer",
+      "description": "Markdown editor and README maker.",
+      "enabled": true
+    },
+    {
+      "id": "ghgen",
+      "module": "gh_gen",
+      "name": "GH Gen",
+      "icon": "🐙",
+      "category": "Developer",
+      "description": "Generate GitHub starter repo files.",
+      "enabled": true
+    },
+    {
+      "id": "organizer",
+      "module": "file_organizer",
+      "name": "File Organizer",
+      "icon": "📁",
+      "category": "Files",
+      "description": "Preview, organize, and undo top-level file sorting.",
+      "enabled": true
+    },
+    {
+      "id": "timers",
+      "module": "timers",
+      "name": "Timers",
+      "icon": "⏱️",
+      "category": "Productivity",
+      "description": "Countdown and stopwatch.",
+      "enabled": true
+    },
+    {
+      "id": "crypto",
+      "module": "crypto_hashes",
+      "name": "Crypto & Hashes",
+      "icon": "🔑",
+      "category": "Developer",
+      "description": "UUIDs and common checksums.",
+      "enabled": true
+    },
+    {
+      "id": "password-gen",
+      "module": "password_gen",
+      "name": "Password Generator",
+      "icon": "🔐",
+      "category": "Developer",
+      "description": "Generate local random passwords.",
+      "enabled": true
+    },
+    {
+      "id": "preferences",
+      "module": "preferences",
+      "name": "Preferences",
+      "icon": "⚙️",
+      "category": "System",
+      "description": "ForUtils settings.",
+      "enabled": true
+    },
+    {
+      "id": "word-counter",
+      "module": "mini_tools",
+      "name": "Word Counter",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Count words.",
+      "enabled": true,
+      "tool": {
+        "op": "wordCount",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "character-counter",
+      "module": "mini_tools",
+      "name": "Character Counter",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Count characters.",
+      "enabled": true,
+      "tool": {
+        "op": "charCount",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "line-counter",
+      "module": "mini_tools",
+      "name": "Line Counter",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Count lines.",
+      "enabled": true,
+      "tool": {
+        "op": "lineCount",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "sentence-counter",
+      "module": "mini_tools",
+      "name": "Sentence Counter",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Estimate sentence count.",
+      "enabled": true,
+      "tool": {
+        "op": "sentenceCount",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "uppercase",
+      "module": "mini_tools",
+      "name": "Uppercase",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert text to uppercase.",
+      "enabled": true,
+      "tool": {
+        "op": "upper",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "lowercase",
+      "module": "mini_tools",
+      "name": "Lowercase",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert text to lowercase.",
+      "enabled": true,
+      "tool": {
+        "op": "lower",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "title-case",
+      "module": "mini_tools",
+      "name": "Title Case",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert text to title case.",
+      "enabled": true,
+      "tool": {
+        "op": "title",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "reverse-text",
+      "module": "mini_tools",
+      "name": "Reverse Text",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Reverse characters.",
+      "enabled": true,
+      "tool": {
+        "op": "reverse",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "trim-spaces",
+      "module": "mini_tools",
+      "name": "Remove Extra Spaces",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Collapse repeated whitespace.",
+      "enabled": true,
+      "tool": {
+        "op": "spaces",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "sort-lines",
+      "module": "mini_tools",
+      "name": "Sort Lines",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Sort lines alphabetically.",
+      "enabled": true,
+      "tool": {
+        "op": "sortLines",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "unique-lines",
+      "module": "mini_tools",
+      "name": "Unique Lines",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Remove duplicate lines.",
+      "enabled": true,
+      "tool": {
+        "op": "uniqueLines",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "remove-blank-lines",
+      "module": "mini_tools",
+      "name": "Remove Blank Lines",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Remove empty lines.",
+      "enabled": true,
+      "tool": {
+        "op": "removeBlank",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "number-lines",
+      "module": "mini_tools",
+      "name": "Number Lines",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Add line numbers.",
+      "enabled": true,
+      "tool": {
+        "op": "numberLines",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "prefix-lines",
+      "module": "mini_tools",
+      "name": "Prefix Lines",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Add a prefix to every line.",
+      "enabled": true,
+      "tool": {
+        "op": "prefix",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "suffix-lines",
+      "module": "mini_tools",
+      "name": "Suffix Lines",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Add a suffix to every line.",
+      "enabled": true,
+      "tool": {
+        "op": "suffix",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "find-replace",
+      "module": "mini_tools",
+      "name": "Find & Replace",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Replace matching text.",
+      "enabled": true,
+      "tool": {
+        "op": "replace",
+        "inputs": 3,
+        "multiline": true
+      }
+    },
+    {
+      "id": "slugify",
+      "module": "mini_tools",
+      "name": "Slugify",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Turn text into a URL-friendly slug.",
+      "enabled": true,
+      "tool": {
+        "op": "slug",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "url-encode",
+      "module": "mini_tools",
+      "name": "URL Encode",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Percent-encode text.",
+      "enabled": true,
+      "tool": {
+        "op": "urlEncode",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "url-decode",
+      "module": "mini_tools",
+      "name": "URL Decode",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Decode percent-encoded text.",
+      "enabled": true,
+      "tool": {
+        "op": "urlDecode",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "html-escape",
+      "module": "mini_tools",
+      "name": "HTML Escape",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Escape HTML special characters.",
+      "enabled": true,
+      "tool": {
+        "op": "htmlEscape",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "html-unescape",
+      "module": "mini_tools",
+      "name": "HTML Unescape",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Restore common HTML entities.",
+      "enabled": true,
+      "tool": {
+        "op": "htmlUnescape",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "base64-encode",
+      "module": "mini_tools",
+      "name": "Base64 Encode",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Encode text as Base64.",
+      "enabled": true,
+      "tool": {
+        "op": "b64e",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "base64-decode",
+      "module": "mini_tools",
+      "name": "Base64 Decode",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Decode Base64 text.",
+      "enabled": true,
+      "tool": {
+        "op": "b64d",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "json-format",
+      "module": "mini_tools",
+      "name": "JSON Formatter",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Pretty-print JSON.",
+      "enabled": true,
+      "tool": {
+        "op": "jsonFormat",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "json-minify",
+      "module": "mini_tools",
+      "name": "JSON Minifier",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Minify JSON.",
+      "enabled": true,
+      "tool": {
+        "op": "jsonMin",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "json-validate",
+      "module": "mini_tools",
+      "name": "JSON Validator",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Validate JSON syntax.",
+      "enabled": true,
+      "tool": {
+        "op": "jsonValid",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "csv-to-tsv",
+      "module": "mini_tools",
+      "name": "CSV → TSV",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert commas to tabs.",
+      "enabled": true,
+      "tool": {
+        "op": "csvTsv",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "tsv-to-csv",
+      "module": "mini_tools",
+      "name": "TSV → CSV",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert tabs to commas.",
+      "enabled": true,
+      "tool": {
+        "op": "tsvCsv",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "text-to-hex",
+      "module": "mini_tools",
+      "name": "Text → Hex",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert text to hex bytes.",
+      "enabled": true,
+      "tool": {
+        "op": "textHex",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "hex-to-text",
+      "module": "mini_tools",
+      "name": "Hex → Text",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert hex bytes to text.",
+      "enabled": true,
+      "tool": {
+        "op": "hexText",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "text-to-binary",
+      "module": "mini_tools",
+      "name": "Text → Binary",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert text to 8-bit binary.",
+      "enabled": true,
+      "tool": {
+        "op": "textBin",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "binary-to-text",
+      "module": "mini_tools",
+      "name": "Binary → Text",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert binary bytes to text.",
+      "enabled": true,
+      "tool": {
+        "op": "binText",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "rot13",
+      "module": "mini_tools",
+      "name": "ROT13",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Apply ROT13.",
+      "enabled": true,
+      "tool": {
+        "op": "rot13",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "caesar-cipher",
+      "module": "mini_tools",
+      "name": "Caesar Cipher",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Shift letters by a number.",
+      "enabled": true,
+      "tool": {
+        "op": "caesar",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "morse-encode",
+      "module": "mini_tools",
+      "name": "Morse Encode",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert basic text to Morse.",
+      "enabled": true,
+      "tool": {
+        "op": "morseE",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "morse-decode",
+      "module": "mini_tools",
+      "name": "Morse Decode",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert Morse to text.",
+      "enabled": true,
+      "tool": {
+        "op": "morseD",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "regex-test",
+      "module": "mini_tools",
+      "name": "Regex Tester",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Test a regular expression against text.",
+      "enabled": true,
+      "tool": {
+        "op": "regexTest",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "regex-replace",
+      "module": "mini_tools",
+      "name": "Regex Replace",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Replace regex matches.",
+      "enabled": true,
+      "tool": {
+        "op": "regexReplace",
+        "inputs": 3,
+        "multiline": true
+      }
+    },
+    {
+      "id": "duplicate-lines",
+      "module": "mini_tools",
+      "name": "Duplicate Line Finder",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Show repeated lines.",
+      "enabled": true,
+      "tool": {
+        "op": "dupeLines",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "markdown-link",
+      "module": "mini_tools",
+      "name": "Markdown Link Maker",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Create a Markdown link.",
+      "enabled": true,
+      "tool": {
+        "op": "mdLink",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "markdown-heading",
+      "module": "mini_tools",
+      "name": "Markdown Heading Maker",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Create a heading.",
+      "enabled": true,
+      "tool": {
+        "op": "mdHeading",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "markdown-table-row",
+      "module": "mini_tools",
+      "name": "Markdown Table Row",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Create a Markdown table row from commas.",
+      "enabled": true,
+      "tool": {
+        "op": "mdRow",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "lorem",
+      "module": "mini_tools",
+      "name": "Lorem Generator",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Generate placeholder text.",
+      "enabled": true,
+      "tool": {
+        "op": "lorem",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "unicode-codepoint",
+      "module": "mini_tools",
+      "name": "Unicode Codepoint",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Show code points.",
+      "enabled": true,
+      "tool": {
+        "op": "codepoint",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "codepoint-char",
+      "module": "mini_tools",
+      "name": "Codepoint → Character",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert a code point such as 1F600.",
+      "enabled": true,
+      "tool": {
+        "op": "fromCodepoint",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "escape-js",
+      "module": "mini_tools",
+      "name": "Escape JS String",
+      "icon": "📝",
+      "category": "Text",
+      "description": "JSON-style escaping for JavaScript strings.",
+      "enabled": true,
+      "tool": {
+        "op": "escapeJs",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "escape-json",
+      "module": "mini_tools",
+      "name": "Escape JSON String",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Escape a value for JSON string content.",
+      "enabled": true,
+      "tool": {
+        "op": "escapeJson",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "filename-sanitize",
+      "module": "mini_tools",
+      "name": "Filename Sanitizer",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Remove unsafe filename characters.",
+      "enabled": true,
+      "tool": {
+        "op": "filename",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "timestamp-filename",
+      "module": "mini_tools",
+      "name": "Timestamp Filename",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Make a timestamped filename.",
+      "enabled": true,
+      "tool": {
+        "op": "timestampFilename",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "extension-preview",
+      "module": "mini_tools",
+      "name": "Change Extension Preview",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Preview a filename with another extension.",
+      "enabled": true,
+      "tool": {
+        "op": "extPreview",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "path-basename",
+      "module": "mini_tools",
+      "name": "Path Basename",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Get final path component.",
+      "enabled": true,
+      "tool": {
+        "op": "basename",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "path-dirname",
+      "module": "mini_tools",
+      "name": "Path Dirname",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Get parent path.",
+      "enabled": true,
+      "tool": {
+        "op": "dirname",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "file-extension",
+      "module": "mini_tools",
+      "name": "File Extension",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Extract an extension.",
+      "enabled": true,
+      "tool": {
+        "op": "extension",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "random-int",
+      "module": "mini_tools",
+      "name": "Random Integer",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Random integer between min and max.",
+      "enabled": true,
+      "tool": {
+        "op": "randInt",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "dice-roller",
+      "module": "mini_tools",
+      "name": "Dice Roller",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Roll N dice with S sides.",
+      "enabled": true,
+      "tool": {
+        "op": "dice",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "coin-flip",
+      "module": "mini_tools",
+      "name": "Coin Flip",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Flip a virtual coin.",
+      "enabled": true,
+      "tool": {
+        "op": "coin",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "random-choice",
+      "module": "mini_tools",
+      "name": "Random Choice",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Pick one line at random.",
+      "enabled": true,
+      "tool": {
+        "op": "choice",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "random-string",
+      "module": "mini_tools",
+      "name": "Random String",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Generate a random alphanumeric string.",
+      "enabled": true,
+      "tool": {
+        "op": "randString",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "random-color",
+      "module": "mini_tools",
+      "name": "Random Color",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Generate a random HEX color.",
+      "enabled": true,
+      "tool": {
+        "op": "randColor",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "decimal-binary",
+      "module": "mini_tools",
+      "name": "Decimal → Binary",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Convert decimal to binary.",
+      "enabled": true,
+      "tool": {
+        "op": "decBin",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "binary-decimal",
+      "module": "mini_tools",
+      "name": "Binary → Decimal",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Convert binary to decimal.",
+      "enabled": true,
+      "tool": {
+        "op": "binDec",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "decimal-hex",
+      "module": "mini_tools",
+      "name": "Decimal → Hex",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Convert decimal to hex.",
+      "enabled": true,
+      "tool": {
+        "op": "decHex",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "hex-decimal",
+      "module": "mini_tools",
+      "name": "Hex → Decimal",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Convert hex to decimal.",
+      "enabled": true,
+      "tool": {
+        "op": "hexDec",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "decimal-octal",
+      "module": "mini_tools",
+      "name": "Decimal → Octal",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Convert decimal to octal.",
+      "enabled": true,
+      "tool": {
+        "op": "decOct",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "octal-decimal",
+      "module": "mini_tools",
+      "name": "Octal → Decimal",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Convert octal to decimal.",
+      "enabled": true,
+      "tool": {
+        "op": "octDec",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "percentage",
+      "module": "mini_tools",
+      "name": "Percentage Calculator",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Calculate A percent of B.",
+      "enabled": true,
+      "tool": {
+        "op": "percent",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "percentage-change",
+      "module": "mini_tools",
+      "name": "Percentage Change",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Calculate percent change from old to new.",
+      "enabled": true,
+      "tool": {
+        "op": "percentChange",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "average",
+      "module": "mini_tools",
+      "name": "Average Calculator",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Average comma/space-separated numbers.",
+      "enabled": true,
+      "tool": {
+        "op": "average",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "median",
+      "module": "mini_tools",
+      "name": "Median Calculator",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Median of numbers.",
+      "enabled": true,
+      "tool": {
+        "op": "median",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "min-max",
+      "module": "mini_tools",
+      "name": "Min / Max",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Find minimum and maximum.",
+      "enabled": true,
+      "tool": {
+        "op": "minmax",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "sum-list",
+      "module": "mini_tools",
+      "name": "Sum List",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Sum numbers.",
+      "enabled": true,
+      "tool": {
+        "op": "sum",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "product-list",
+      "module": "mini_tools",
+      "name": "Product List",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Multiply numbers.",
+      "enabled": true,
+      "tool": {
+        "op": "product",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "gcd",
+      "module": "mini_tools",
+      "name": "GCD",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Greatest common divisor.",
+      "enabled": true,
+      "tool": {
+        "op": "gcd",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "lcm",
+      "module": "mini_tools",
+      "name": "LCM",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Least common multiple.",
+      "enabled": true,
+      "tool": {
+        "op": "lcm",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "prime-check",
+      "module": "mini_tools",
+      "name": "Prime Checker",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Check whether an integer is prime.",
+      "enabled": true,
+      "tool": {
+        "op": "prime",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "factorial",
+      "module": "mini_tools",
+      "name": "Factorial",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Compute n!.",
+      "enabled": true,
+      "tool": {
+        "op": "factorial",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "fibonacci",
+      "module": "mini_tools",
+      "name": "Fibonacci",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Compute the nth Fibonacci number.",
+      "enabled": true,
+      "tool": {
+        "op": "fib",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "square",
+      "module": "mini_tools",
+      "name": "Square",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Compute x².",
+      "enabled": true,
+      "tool": {
+        "op": "square",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "cube",
+      "module": "mini_tools",
+      "name": "Cube",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Compute x³.",
+      "enabled": true,
+      "tool": {
+        "op": "cube",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "sqrt",
+      "module": "mini_tools",
+      "name": "Square Root",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Compute √x.",
+      "enabled": true,
+      "tool": {
+        "op": "sqrt",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "power",
+      "module": "mini_tools",
+      "name": "Power",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Compute base^exponent.",
+      "enabled": true,
+      "tool": {
+        "op": "power",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "absolute",
+      "module": "mini_tools",
+      "name": "Absolute Value",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Compute |x|.",
+      "enabled": true,
+      "tool": {
+        "op": "abs",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "round",
+      "module": "mini_tools",
+      "name": "Round Number",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Round to N decimal places.",
+      "enabled": true,
+      "tool": {
+        "op": "round",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "clamp",
+      "module": "mini_tools",
+      "name": "Clamp Number",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Clamp x between min and max.",
+      "enabled": true,
+      "tool": {
+        "op": "clamp",
+        "inputs": 3,
+        "multiline": false
+      }
+    },
+    {
+      "id": "c-f",
+      "module": "mini_tools",
+      "name": "Celsius → Fahrenheit",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Temperature conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "cF",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "f-c",
+      "module": "mini_tools",
+      "name": "Fahrenheit → Celsius",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Temperature conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "fC",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "c-k",
+      "module": "mini_tools",
+      "name": "Celsius → Kelvin",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Temperature conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "cK",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "miles-km",
+      "module": "mini_tools",
+      "name": "Miles → Kilometers",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Distance conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "miKm",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "km-miles",
+      "module": "mini_tools",
+      "name": "Kilometers → Miles",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Distance conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "kmMi",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "meters-feet",
+      "module": "mini_tools",
+      "name": "Meters → Feet",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Length conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "mFt",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "feet-meters",
+      "module": "mini_tools",
+      "name": "Feet → Meters",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Length conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "ftM",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "inches-cm",
+      "module": "mini_tools",
+      "name": "Inches → Centimeters",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Length conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "inCm",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "cm-inches",
+      "module": "mini_tools",
+      "name": "Centimeters → Inches",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Length conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "cmIn",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "kg-lb",
+      "module": "mini_tools",
+      "name": "Kilograms → Pounds",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Mass conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "kgLb",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "lb-kg",
+      "module": "mini_tools",
+      "name": "Pounds → Kilograms",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Mass conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "lbKg",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "bytes-human",
+      "module": "mini_tools",
+      "name": "Bytes → Human Size",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Format a byte count.",
+      "enabled": true,
+      "tool": {
+        "op": "bytesHuman",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "human-bytes",
+      "module": "mini_tools",
+      "name": "Human Size → Bytes",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Parse values like 2.5 GB.",
+      "enabled": true,
+      "tool": {
+        "op": "humanBytes",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "seconds-time",
+      "module": "mini_tools",
+      "name": "Seconds → Time",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Convert seconds to HH:MM:SS.",
+      "enabled": true,
+      "tool": {
+        "op": "secTime",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "time-seconds",
+      "module": "mini_tools",
+      "name": "Time → Seconds",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Convert HH:MM:SS to seconds.",
+      "enabled": true,
+      "tool": {
+        "op": "timeSec",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "hex-rgb",
+      "module": "mini_tools",
+      "name": "HEX → RGB",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Convert #RRGGBB to RGB.",
+      "enabled": true,
+      "tool": {
+        "op": "hexRgb",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "rgb-hex",
+      "module": "mini_tools",
+      "name": "RGB → HEX",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Convert RGB components to HEX.",
+      "enabled": true,
+      "tool": {
+        "op": "rgbHex",
+        "inputs": 3,
+        "multiline": false
+      }
+    },
+    {
+      "id": "unix-now",
+      "module": "mini_tools",
+      "name": "Unix Timestamp Now",
+      "icon": "🕒",
+      "category": "Time",
+      "description": "Current Unix timestamp.",
+      "enabled": true,
+      "tool": {
+        "op": "unixNow",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "unix-date",
+      "module": "mini_tools",
+      "name": "Unix Timestamp → Date",
+      "icon": "🕒",
+      "category": "Time",
+      "description": "Convert timestamp to local date.",
+      "enabled": true,
+      "tool": {
+        "op": "unixDate",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "date-diff",
+      "module": "mini_tools",
+      "name": "Date Difference",
+      "icon": "🕒",
+      "category": "Time",
+      "description": "Days between YYYY-MM-DD dates.",
+      "enabled": true,
+      "tool": {
+        "op": "dateDiff",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "date-add",
+      "module": "mini_tools",
+      "name": "Date Add Days",
+      "icon": "🕒",
+      "category": "Time",
+      "description": "Add days to YYYY-MM-DD.",
+      "enabled": true,
+      "tool": {
+        "op": "dateAdd",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "day-of-week",
+      "module": "mini_tools",
+      "name": "Day of Week",
+      "icon": "🕒",
+      "category": "Time",
+      "description": "Find weekday for YYYY-MM-DD.",
+      "enabled": true,
+      "tool": {
+        "op": "weekday",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "iso-now",
+      "module": "mini_tools",
+      "name": "ISO Date/Time Now",
+      "icon": "🕒",
+      "category": "Time",
+      "description": "Current ISO date/time.",
+      "enabled": true,
+      "tool": {
+        "op": "isoNow",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "semver-bump",
+      "module": "mini_tools",
+      "name": "SemVer Bump",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Bump major/minor/patch.",
+      "enabled": true,
+      "tool": {
+        "op": "semverBump",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "version-compare",
+      "module": "mini_tools",
+      "name": "Version Compare",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Compare two dotted versions.",
+      "enabled": true,
+      "tool": {
+        "op": "verCompare",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "java-class-name",
+      "module": "mini_tools",
+      "name": "Java Class Name Sanitizer",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Create a valid-ish Java class name.",
+      "enabled": true,
+      "tool": {
+        "op": "javaName",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "js-variable-name",
+      "module": "mini_tools",
+      "name": "JS Variable Sanitizer",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Create a JavaScript identifier.",
+      "enabled": true,
+      "tool": {
+        "op": "jsName",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "python-identifier",
+      "module": "mini_tools",
+      "name": "Python Identifier Sanitizer",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Create a Python identifier.",
+      "enabled": true,
+      "tool": {
+        "op": "pyName",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "shell-quote",
+      "module": "mini_tools",
+      "name": "Shell Quote",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Single-quote shell text safely.",
+      "enabled": true,
+      "tool": {
+        "op": "shellQuote",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "git-commit-template",
+      "module": "mini_tools",
+      "name": "Git Commit Template",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Create a conventional commit message.",
+      "enabled": true,
+      "tool": {
+        "op": "gitCommit",
+        "inputs": 3,
+        "multiline": false
+      }
+    },
+    {
+      "id": "checksum-compare",
+      "module": "mini_tools",
+      "name": "Checksum Compare",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Compare two checksum strings.",
+      "enabled": true,
+      "tool": {
+        "op": "checksumCompare",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "ipv4-validate",
+      "module": "mini_tools",
+      "name": "IPv4 Validator",
+      "icon": "🌐",
+      "category": "Network",
+      "description": "Validate an IPv4 address.",
+      "enabled": true,
+      "tool": {
+        "op": "ipv4Valid",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "ipv4-integer",
+      "module": "mini_tools",
+      "name": "IPv4 → Integer",
+      "icon": "🌐",
+      "category": "Network",
+      "description": "Convert IPv4 to unsigned integer.",
+      "enabled": true,
+      "tool": {
+        "op": "ipv4Int",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "integer-ipv4",
+      "module": "mini_tools",
+      "name": "Integer → IPv4",
+      "icon": "🌐",
+      "category": "Network",
+      "description": "Convert unsigned integer to IPv4.",
+      "enabled": true,
+      "tool": {
+        "op": "intIpv4",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "cidr-hosts",
+      "module": "mini_tools",
+      "name": "CIDR Host Count",
+      "icon": "🌐",
+      "category": "Network",
+      "description": "Number of IPv4 addresses in /prefix.",
+      "enabled": true,
+      "tool": {
+        "op": "cidrHosts",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "http-status",
+      "module": "mini_tools",
+      "name": "HTTP Status Lookup",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Explain a common HTTP status code.",
+      "enabled": true,
+      "tool": {
+        "op": "httpStatus",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "chmod-rwx",
+      "module": "mini_tools",
+      "name": "chmod → rwx",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Convert 755 to rwxr-xr-x.",
+      "enabled": true,
+      "tool": {
+        "op": "chmodRwx",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "rwx-chmod",
+      "module": "mini_tools",
+      "name": "rwx → chmod",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Convert rwxr-xr-x to 755.",
+      "enabled": true,
+      "tool": {
+        "op": "rwxChmod",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "count-vowels",
+      "module": "mini_tools",
+      "name": "Vowel Counter",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Count vowels.",
+      "enabled": true,
+      "tool": {
+        "op": "vowels",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "count-consonants",
+      "module": "mini_tools",
+      "name": "Consonant Counter",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Count consonants.",
+      "enabled": true,
+      "tool": {
+        "op": "consonants",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "remove-punctuation",
+      "module": "mini_tools",
+      "name": "Remove Punctuation",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Remove punctuation.",
+      "enabled": true,
+      "tool": {
+        "op": "noPunct",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "kebab-case",
+      "module": "mini_tools",
+      "name": "kebab-case",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert text to kebab-case.",
+      "enabled": true,
+      "tool": {
+        "op": "kebab",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "snake-case",
+      "module": "mini_tools",
+      "name": "snake_case",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert text to snake_case.",
+      "enabled": true,
+      "tool": {
+        "op": "snake",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "camel-case",
+      "module": "mini_tools",
+      "name": "camelCase",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert text to camelCase.",
+      "enabled": true,
+      "tool": {
+        "op": "camel",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "pascal-case",
+      "module": "mini_tools",
+      "name": "PascalCase",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Convert text to PascalCase.",
+      "enabled": true,
+      "tool": {
+        "op": "pascal",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "initials",
+      "module": "mini_tools",
+      "name": "Initials Maker",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Get initials from words.",
+      "enabled": true,
+      "tool": {
+        "op": "initials",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "wrap-quotes",
+      "module": "mini_tools",
+      "name": "Wrap in Quotes",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Wrap text in double quotes.",
+      "enabled": true,
+      "tool": {
+        "op": "quotes",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "repeat-text",
+      "module": "mini_tools",
+      "name": "Repeat Text",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Repeat text N times.",
+      "enabled": true,
+      "tool": {
+        "op": "repeat",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "tab-to-spaces",
+      "module": "mini_tools",
+      "name": "Tabs → Spaces",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Replace tabs with four spaces.",
+      "enabled": true,
+      "tool": {
+        "op": "tabsSpaces",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "spaces-to-tabs",
+      "module": "mini_tools",
+      "name": "4 Spaces → Tabs",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Replace groups of four spaces with tabs.",
+      "enabled": true,
+      "tool": {
+        "op": "spacesTabs",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "remove-digits",
+      "module": "mini_tools",
+      "name": "Remove Digits",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Remove 0-9 characters.",
+      "enabled": true,
+      "tool": {
+        "op": "noDigits",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "only-digits",
+      "module": "mini_tools",
+      "name": "Keep Digits",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Keep only digits.",
+      "enabled": true,
+      "tool": {
+        "op": "onlyDigits",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "only-letters",
+      "module": "mini_tools",
+      "name": "Keep Letters",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Keep only letters.",
+      "enabled": true,
+      "tool": {
+        "op": "onlyLetters",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "word-frequency",
+      "module": "mini_tools",
+      "name": "Word Frequency",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Count word frequencies.",
+      "enabled": true,
+      "tool": {
+        "op": "wordFreq",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "longest-word",
+      "module": "mini_tools",
+      "name": "Longest Word",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Find longest word.",
+      "enabled": true,
+      "tool": {
+        "op": "longestWord",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "shortest-word",
+      "module": "mini_tools",
+      "name": "Shortest Word",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Find shortest word.",
+      "enabled": true,
+      "tool": {
+        "op": "shortestWord",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "palindrome-check",
+      "module": "mini_tools",
+      "name": "Palindrome Checker",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Check whether text is a palindrome.",
+      "enabled": true,
+      "tool": {
+        "op": "palindrome",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "anagram-check",
+      "module": "mini_tools",
+      "name": "Anagram Checker",
+      "icon": "📝",
+      "category": "Text",
+      "description": "Check whether two strings are anagrams.",
+      "enabled": true,
+      "tool": {
+        "op": "anagram",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "ratio",
+      "module": "mini_tools",
+      "name": "Ratio Simplifier",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Simplify A:B.",
+      "enabled": true,
+      "tool": {
+        "op": "ratio",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "modulo",
+      "module": "mini_tools",
+      "name": "Modulo",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Compute A mod B.",
+      "enabled": true,
+      "tool": {
+        "op": "mod",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "hypotenuse",
+      "module": "mini_tools",
+      "name": "Hypotenuse",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Compute sqrt(a²+b²).",
+      "enabled": true,
+      "tool": {
+        "op": "hypot",
+        "inputs": 2,
+        "multiline": false
+      }
+    },
+    {
+      "id": "distance-2d",
+      "module": "mini_tools",
+      "name": "2D Distance",
+      "icon": "🧮",
+      "category": "Math",
+      "description": "Distance between x1,y1 and x2,y2.",
+      "enabled": true,
+      "tool": {
+        "op": "distance4",
+        "inputs": 4,
+        "multiline": false
+      }
+    },
+    {
+      "id": "degrees-radians",
+      "module": "mini_tools",
+      "name": "Degrees → Radians",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Angle conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "degRad",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "radians-degrees",
+      "module": "mini_tools",
+      "name": "Radians → Degrees",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Angle conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "radDeg",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "hours-minutes",
+      "module": "mini_tools",
+      "name": "Hours → Minutes",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Time conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "hrMin",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "minutes-hours",
+      "module": "mini_tools",
+      "name": "Minutes → Hours",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Time conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "minHr",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "days-hours",
+      "module": "mini_tools",
+      "name": "Days → Hours",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Time conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "dayHr",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "weeks-days",
+      "module": "mini_tools",
+      "name": "Weeks → Days",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Time conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "weekDay",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "mb-gb",
+      "module": "mini_tools",
+      "name": "MB → GB",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Storage conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "mbGb",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "gb-mb",
+      "module": "mini_tools",
+      "name": "GB → MB",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Storage conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "gbMb",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "kb-mb",
+      "module": "mini_tools",
+      "name": "KB → MB",
+      "icon": "🔄",
+      "category": "Converters",
+      "description": "Storage conversion.",
+      "enabled": true,
+      "tool": {
+        "op": "kbMb",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "ascii-code",
+      "module": "mini_tools",
+      "name": "Character → Code",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Show first character code.",
+      "enabled": true,
+      "tool": {
+        "op": "ascii",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "code-char",
+      "module": "mini_tools",
+      "name": "Code → Character",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Convert integer character code.",
+      "enabled": true,
+      "tool": {
+        "op": "codeChar",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "query-string-build",
+      "module": "mini_tools",
+      "name": "Query String Builder",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Turn key=value lines into a query string.",
+      "enabled": true,
+      "tool": {
+        "op": "queryBuild",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "query-string-parse",
+      "module": "mini_tools",
+      "name": "Query String Parser",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Turn query string into key=value lines.",
+      "enabled": true,
+      "tool": {
+        "op": "queryParse",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "json-key-list",
+      "module": "mini_tools",
+      "name": "JSON Key List",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "List top-level JSON keys.",
+      "enabled": true,
+      "tool": {
+        "op": "jsonKeys",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "json-value-count",
+      "module": "mini_tools",
+      "name": "JSON Value Count",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Count top-level array/object items.",
+      "enabled": true,
+      "tool": {
+        "op": "jsonCount",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "array-indexer",
+      "module": "mini_tools",
+      "name": "List Indexer",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Number comma-separated values from zero.",
+      "enabled": true,
+      "tool": {
+        "op": "arrayIndex",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "indent-text",
+      "module": "mini_tools",
+      "name": "Indent Text",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Indent every line by N spaces.",
+      "enabled": true,
+      "tool": {
+        "op": "indent",
+        "inputs": 2,
+        "multiline": true
+      }
+    },
+    {
+      "id": "dedent-text",
+      "module": "mini_tools",
+      "name": "Dedent Text",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Remove common leading whitespace.",
+      "enabled": true,
+      "tool": {
+        "op": "dedent",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "uuid-no-dashes",
+      "module": "mini_tools",
+      "name": "UUID 32",
+      "icon": "🎲",
+      "category": "Random",
+      "description": "Generate 32-char UUID hex.",
+      "enabled": true,
+      "tool": {
+        "op": "uuid32",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "uuid-standard",
+      "module": "mini_tools",
+      "name": "UUID Standard",
+      "icon": "🎲",
+      "category": "Random",
+      "description": "Generate a UUID.",
+      "enabled": true,
+      "tool": {
+        "op": "uuid",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "random-yes-no",
+      "module": "mini_tools",
+      "name": "Random Yes/No",
+      "icon": "🎲",
+      "category": "Random",
+      "description": "Random yes or no.",
+      "enabled": true,
+      "tool": {
+        "op": "yesNo",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "random-letter",
+      "module": "mini_tools",
+      "name": "Random Letter",
+      "icon": "🎲",
+      "category": "Random",
+      "description": "Generate a random letter.",
+      "enabled": true,
+      "tool": {
+        "op": "randLetter",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "random-digit",
+      "module": "mini_tools",
+      "name": "Random Digit",
+      "icon": "🎲",
+      "category": "Random",
+      "description": "Generate a random digit.",
+      "enabled": true,
+      "tool": {
+        "op": "randDigit",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "common-port",
+      "module": "mini_tools",
+      "name": "Common Port Lookup",
+      "icon": "🌐",
+      "category": "Network",
+      "description": "Lookup common TCP port names.",
+      "enabled": true,
+      "tool": {
+        "op": "commonPort",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "netmask-prefix",
+      "module": "mini_tools",
+      "name": "Prefix → Netmask",
+      "icon": "🌐",
+      "category": "Network",
+      "description": "Convert IPv4 CIDR prefix to netmask.",
+      "enabled": true,
+      "tool": {
+        "op": "prefixMask",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "netmask-prefix-reverse",
+      "module": "mini_tools",
+      "name": "Netmask → Prefix",
+      "icon": "🌐",
+      "category": "Network",
+      "description": "Convert IPv4 netmask to CIDR prefix.",
+      "enabled": true,
+      "tool": {
+        "op": "maskPrefix",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "binary-count-ones",
+      "module": "mini_tools",
+      "name": "Binary 1 Counter",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Count one bits in a binary string.",
+      "enabled": true,
+      "tool": {
+        "op": "countOnes",
+        "inputs": 1,
+        "multiline": false
+      }
+    },
+    {
+      "id": "hex-uppercase",
+      "module": "mini_tools",
+      "name": "HEX Uppercase",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Normalize hex text to uppercase.",
+      "enabled": true,
+      "tool": {
+        "op": "hexUpper",
+        "inputs": 1,
+        "multiline": true
+      }
+    },
+    {
+      "id": "hex-lowercase",
+      "module": "mini_tools",
+      "name": "HEX Lowercase",
+      "icon": "💻",
+      "category": "Developer",
+      "description": "Normalize hex text to lowercase.",
+      "enabled": true,
+      "tool": {
+        "op": "hexLower",
+        "inputs": 1,
+        "multiline": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+ForUtils-Ultimate-Full/
+├── app.js
+├── VERSION
+├── README.md
+├── run.sh
+├── install.sh
+├── lib/forutils_common.js
+└── apps/
+    ├── manifest.json (184 tools)
+    ├── system_stats.js
+    ├── network_tools.js
+    ├── docs_maker.js
+    ├── gh_gen.js
+    ├── file_organizer.js
+    ├── timers.js
+    ├── crypto_hashes.js
+    ├── password_gen.js
+    ├── preferences.js
+    ├── mini_tools.js (175 mini utilities)
+    └── template_app.js
