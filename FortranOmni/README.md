@@ -1,6 +1,6 @@
-# ForUtils Ultimate
+# FortranOmni Ultimate
 
-ForUtils Ultimate is a GTK4/GJS desktop utility suite. This build contains **184 tools total**, including the original major ForUtils tools plus **175 additional mini utilities**.
+FortranOmni Ultimate is a GTK4/GJS desktop utility suite. This build contains **184 tools total**, including the original major FortranOmni tools plus **175 additional mini utilities**.
 
 ## Major apps
 

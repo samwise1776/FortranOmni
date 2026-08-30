@@ -27,7 +27,7 @@ function createPage(ctx) {
     const profile = common.card(10);
     profile.append(common.sectionTitle("Profile"));
 
-    const nameLabel = common.infoLabel("Display name shown in the ForUtils sidebar:");
+    const nameLabel = common.infoLabel("Display name shown in the FortranOmni sidebar:");
     const nameEntry = new Gtk.Entry({
         text: ctx.settings.userName || "",
         placeholder_text: "Your display name",

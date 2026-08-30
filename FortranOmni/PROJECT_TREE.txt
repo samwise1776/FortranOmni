@@ -1,10 +1,10 @@
-ForUtils-Ultimate-Full/
+FortranOmni-Ultimate-Full/
 ├── app.js
 ├── VERSION
 ├── README.md
 ├── run.sh
 ├── install.sh
-├── lib/forutils_common.js
+├── lib/fortranomni_common.js
 └── apps/
     ├── manifest.json (184 tools)
     ├── system_stats.js

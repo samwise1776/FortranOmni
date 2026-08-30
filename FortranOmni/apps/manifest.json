@@ -78,7 +78,7 @@
       "name": "Preferences",
       "icon": "⚙️",
       "category": "System",
-      "description": "ForUtils settings.",
+      "description": "FortranOmni settings.",
       "enabled": true
     },
     {

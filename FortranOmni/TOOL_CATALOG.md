@@ -1,4 +1,4 @@
-# ForUtils Ultimate Tool Catalog
+# FortranOmni Ultimate Tool Catalog
 
 **184 tools total**
 
@@ -129,7 +129,7 @@
 
 - **System Stats** — CPU, RAM, disk, OS, and session information.
 - **Network Tools** — Ping, DNS, routes, interfaces, and connections.
-- **Preferences** — ForUtils settings.
+- **Preferences** — FortranOmni settings.
 
 ## Text
 

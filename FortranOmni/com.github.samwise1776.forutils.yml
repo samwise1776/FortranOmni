@@ -1,8 +1,8 @@
-app-id: com.github.samwise1776.forutils
+app-id: com.github.samwise1776.fortranomni
 runtime: org.gnome.Platform
 runtime-version: '50'
 sdk: org.gnome.Sdk
-command: forutils
+command: fortranomni
 finish-args:
   - --share=network
   - --socket=wayland
@@ -10,12 +10,12 @@ finish-args:
   - --device=dri
   - --filesystem=home
 modules:
-  - name: forutils
+  - name: fortranomni
     buildsystem: simple
     build-commands:
-      - mkdir -p /app/share/forutils
-      - cp -a . /app/share/forutils/
-      - install -Dm755 run.sh /app/bin/forutils
+      - mkdir -p /app/share/fortranomni
+      - cp -a . /app/share/fortranomni/
+      - install -Dm755 run.sh /app/bin/fortranomni
     sources:
       - type: dir
         path: .

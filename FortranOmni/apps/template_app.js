@@ -1,5 +1,5 @@
 /*
- * ForUtils app template
+ * FortranOmni app template
  *
  * 1. Copy this file and rename it, for example:
  *      apps/my_tool.js
@@ -15,7 +15,7 @@
  *        "enabled": true
  *      }
  *
- * 4. Restart ForUtils.
+ * 4. Restart FortranOmni.
  */
 
 var metadata = {
@@ -39,7 +39,7 @@ function createPage(ctx) {
     page.set_margin_start(34);
     page.set_margin_end(34);
 
-    page.append(common.pageTitle("My New ForUtils App"));
+    page.append(common.pageTitle("My New FortranOmni App"));
 
     const card = common.card();
     card.append(common.sectionTitle("Start here"));
@@ -52,7 +52,7 @@ function createPage(ctx) {
     const button = new Gtk.Button({ label: "Test Button" });
     button.add_css_class("primary");
     button.connect("clicked", () => {
-        label.set_label("Your new ForUtils app works.");
+        label.set_label("Your new FortranOmni app works.");
     });
 
     card.append(button);

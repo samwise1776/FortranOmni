@@ -2,3 +2,4 @@ flatpak-build/
 flatpak-repo/
 *.core
 *.log
+.flatpak-builder/

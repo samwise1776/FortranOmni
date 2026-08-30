@@ -13,7 +13,7 @@ const MANIFEST = GLib.build_filenamev([APPS_DIR, "manifest.json"]);
 imports.searchPath.unshift(LIB_DIR);
 imports.searchPath.unshift(APPS_DIR);
 
-const Common = imports.forutils_common;
+const Common = imports.fortranomni_common;
 
 const APP_ID = "com.github.samwise1776.fortranomni";
 const APP_NAME = "FortranOmni";
@@ -67,7 +67,7 @@ function loadManifest() {
         const manifest = JSON.parse(new TextDecoder().decode(bytes));
         return Array.isArray(manifest.apps) ? manifest.apps.filter(x => x.enabled !== false) : [];
     } catch (e) {
-        printerr(`[ForUtils] manifest error: ${e.stack || e}`);
+        printerr(`[FortranOmni] manifest error: ${e.stack || e}`);
         return [];
     }
 }

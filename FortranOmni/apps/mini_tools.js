@@ -36,7 +36,7 @@ function createPage(ctx, entry){
     const s=new Gtk.ScrolledWindow({hexpand:true,vexpand:true});
     const p=new Gtk.Box({orientation:Gtk.Orientation.VERTICAL,spacing:14,hexpand:true});
     p.set_margin_top(24);p.set_margin_bottom(24);p.set_margin_start(28);p.set_margin_end(28);
-    p.append(common.pageTitle(entry.name));p.append(common.infoLabel(entry.description||"ForUtils mini tool"));
+    p.append(common.pageTitle(entry.name));p.append(common.infoLabel(entry.description||"FortranOmni mini tool"));
     const c=common.card();c.append(common.sectionTitle("Input"));
     const inputs=[];
     for(let i=0;i<(spec.inputs||1);i++){

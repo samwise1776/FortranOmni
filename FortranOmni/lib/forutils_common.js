@@ -1,7 +1,7 @@
 const { GLib, Gtk } = imports.gi;
 const ByteArray = imports.byteArray;
 
-const CONFIG_DIR = GLib.build_filenamev([GLib.get_user_config_dir(), "forutils"]);
+const CONFIG_DIR = GLib.build_filenamev([GLib.get_user_config_dir(), "fortranomni"]);
 const SETTINGS_FILE = GLib.build_filenamev([CONFIG_DIR, "settings.json"]);
 
 function decodeBytes(bytes) {
