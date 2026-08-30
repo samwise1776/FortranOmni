@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=FortranOmni
+Comment=Desktop utility suite
+Exec=fortranomni
+Terminal=false
+Type=Application
+Categories=Utility;Development;

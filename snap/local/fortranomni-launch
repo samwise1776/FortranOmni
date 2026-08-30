@@ -1,0 +1,3 @@
+#!/bin/sh
+cd "$SNAP"
+exec gjs "$SNAP/app.js"

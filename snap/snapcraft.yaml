@@ -1,0 +1,25 @@
+name: fortranomni
+title: FortranOmni
+version: '1.0.0'
+summary: A desktop utility suite for Linux
+description: |
+  FortranOmni is a desktop utility suite containing useful tools.
+base: core24
+grade: stable
+confinement: strict
+
+apps:
+  fortranomni:
+    command: bin/fortranomni-launch
+    extensions: [gnome]
+    plugs: [home, network]
+
+parts:
+  app:
+    plugin: dump
+    source: snap-payload
+  launcher:
+    plugin: dump
+    source: snap/local
+    organize:
+      fortranomni-launch: bin/fortranomni-launch
